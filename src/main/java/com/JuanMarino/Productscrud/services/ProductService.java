@@ -4,10 +4,16 @@
  */
 package com.JuanMarino.Productscrud.services;
 
+import com.JuanMarino.Productscrud.models.ProductEntity;
+import java.util.List;
+
 /**
  *
  * @author Usuario
  */
 public interface ProductService {
-    
+    public ProductEntity save(ProductEntity product);
+    public void delete(Integer id);
+    public ProductEntity findById(Integer id);
+    public List<ProductEntity> findAll();
 }

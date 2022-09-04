@@ -4,12 +4,13 @@
  */
 package com.JuanMarino.Productscrud.dao;
 
+import com.JuanMarino.Productscrud.models.ProductEntity;
 import org.springframework.data.repository.CrudRepository;
 
 /**
  *
  * @author Usuario
  */
-public interface ProductDao extends CrudRepository<ProductDao, Integer>{
+public interface ProductDao extends CrudRepository<ProductEntity, Integer>{
     
 }

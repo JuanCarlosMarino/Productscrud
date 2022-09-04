@@ -15,16 +15,16 @@ public class ProductEntity implements Serializable {
     
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "idProducto")
+    @Column(name = "idproducto")
     private Integer idProduct;
     
-    @Column(name = "nombreProducto")
+    @Column(name = "nombreproducto")
     private String productName;
     
-    @Column(name = "valorCompra")
+    @Column(name = "valorcompra")
     private double purchaseValue;
     
-    @Column(name = "valorVenta")
+    @Column(name = "valorventa")
     private double saleValue;
     
     @Column(name = "cantidad")
