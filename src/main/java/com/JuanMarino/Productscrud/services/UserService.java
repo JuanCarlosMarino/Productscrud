@@ -12,7 +12,7 @@ import java.util.List;
  * @author Usuario
  */
 public interface UserService {
-    public UserEntity save(UserEntity product);
+    public UserEntity save(UserEntity user);
     public void delete(Integer id);
     public UserEntity findById(Integer id);
     public List<UserEntity> findAll();

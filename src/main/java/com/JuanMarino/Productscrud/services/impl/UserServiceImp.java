@@ -24,8 +24,8 @@ public class UserServiceImp implements UserService{
 
     @Override
     @Transactional(readOnly = false)
-    public UserEntity save(UserEntity product) {
-        return repositoryUser.save(product);
+    public UserEntity save(UserEntity user) {
+        return repositoryUser.save(user);
     }
 
     @Override

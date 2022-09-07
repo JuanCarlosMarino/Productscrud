@@ -22,11 +22,32 @@ public class InvoiceEntity implements Serializable {
     @Column(name = "fecha")
     private String date;
 
-    @Column(name = "clave")
-    private double password;
-    
     @ManyToOne
     @JoinColumn(name = "idusuarios")
     private UserEntity iDUsers;
+
+    public Integer getIdInvoice() {
+        return idInvoice;
+    }
+
+    public void setIdInvoice(Integer idInvoice) {
+        this.idInvoice = idInvoice;
+    }
+
+    public String getDate() {
+        return date;
+    }
+
+    public void setDate(String date) {
+        this.date = date;
+    }
+
+    public UserEntity getiDUsers() {
+        return iDUsers;
+    }
+
+    public void setiDUsers(UserEntity iDUsers) {
+        this.iDUsers = iDUsers;
+    }
 
 }

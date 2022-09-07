@@ -12,7 +12,7 @@ import java.util.List;
  * @author Usuario
  */
 public interface TypeProductService {
-    public TypeProductEntity save(TypeProductEntity product);
+    public TypeProductEntity save(TypeProductEntity typeProduct);
     public void delete(Integer id);
     public TypeProductEntity findById(Integer id);
     public List<TypeProductEntity> findAll();

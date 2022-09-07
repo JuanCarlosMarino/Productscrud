@@ -12,7 +12,7 @@ import java.util.List;
  * @author Usuario
  */
 public interface ProductsInvoiceService {
-    public ProductsInvoiceEntity save(ProductsInvoiceEntity product);
+    public ProductsInvoiceEntity save(ProductsInvoiceEntity productInvoice);
     public void delete(Integer id);
     public ProductsInvoiceEntity findById(Integer id);
     public List<ProductsInvoiceEntity> findAll();

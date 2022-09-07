@@ -24,8 +24,8 @@ public class TypeProductServiceImp implements TypeProductService{
 
     @Override
     @Transactional(readOnly = false)
-    public TypeProductEntity save(TypeProductEntity product) {
-        return repositoryTypeProduct.save(product);
+    public TypeProductEntity save(TypeProductEntity typeProduct) {
+        return repositoryTypeProduct.save(typeProduct);
     }
 
     @Override

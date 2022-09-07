@@ -24,8 +24,8 @@ public class ProductsInvoiceServiceImp implements ProductsInvoiceService{
 
     @Override
     @Transactional(readOnly = false)
-    public ProductsInvoiceEntity save(ProductsInvoiceEntity product) {
-        return repositoryProductsInvoice.save(product);
+    public ProductsInvoiceEntity save(ProductsInvoiceEntity productInvoice) {
+        return repositoryProductsInvoice.save(productInvoice);
     }
 
     @Override
