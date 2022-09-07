@@ -33,11 +33,11 @@ CREATE TABLE IF NOT EXISTS `store2`.`producto` (
   `valorcompra` DOUBLE NOT NULL,
   `valorventa` DOUBLE NOT NULL,
   `cantidad` DOUBLE NOT NULL,
-  `tipoproducto_idtipoproducto` INT NOT NULL,
+  `idtipoproducto` INT NOT NULL,
   PRIMARY KEY (`idproducto`),
-  INDEX `fk_producto_tipoproducto_idx` (`tipoproducto_idtipoproducto` ASC) VISIBLE,
+  INDEX `fk_producto_tipoproducto_idx` (`idtipoproducto` ASC) VISIBLE,
   CONSTRAINT `fk_producto_tipoproducto`
-    FOREIGN KEY (`tipoproducto_idtipoproducto`)
+    FOREIGN KEY (`idtipoproducto`)
     REFERENCES `store2`.`tipoproducto` (`idtipoproducto`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
@@ -61,11 +61,11 @@ ENGINE = InnoDB;
 CREATE TABLE IF NOT EXISTS `store2`.`factura` (
   `idfactura` INT NOT NULL AUTO_INCREMENT,
   `fecha` VARCHAR(45) NOT NULL,
-  `usuarios_idusuarios` INT NOT NULL,
+  `idusuarios` INT NOT NULL,
   PRIMARY KEY (`idfactura`),
-  INDEX `fk_factura_usuarios1_idx` (`usuarios_idusuarios` ASC) VISIBLE,
+  INDEX `fk_factura_usuarios1_idx` (`idusuarios` ASC) VISIBLE,
   CONSTRAINT `fk_factura_usuarios1`
-    FOREIGN KEY (`usuarios_idusuarios`)
+    FOREIGN KEY (`idusuarios`)
     REFERENCES `store2`.`usuarios` (`idusuarios`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
